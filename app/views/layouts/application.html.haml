@@ -1,0 +1,12 @@
+!!!
+%html
+  %head
+    %title
+  %body
+    %header
+      %h1 Evander Orange
+      %nav
+        - %W(News Music Videos Photos Compositions Contact about).each do |name|
+          = link_to name, '#'
+
+    = yield

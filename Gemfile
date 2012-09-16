@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'decent_exposure'
+gem 'haml-rails'
 gem 'rails', '3.2.8'
 gem 'pg'
 
