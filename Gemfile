@@ -13,6 +13,7 @@ end
 
 group :development do
   gem 'hashrocket_ui', git: 'git@github.com:hashrocket/hashrocket_ui.git'
+  gem 'heroku'
 end
 
 gem 'jquery-rails'
