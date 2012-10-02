@@ -1,7 +1,8 @@
-%nav.actions
-  = link_to "edit", edit_slug_path(page.slug)
-  |
-  = link_to "delete", slug_path(page.slug), method: :delete, confirm: 'sure?'
+- if current_user.present?
+  %nav.actions
+    = link_to "edit", edit_slug_path(page.slug)
+    |
+    = link_to "delete", slug_path(page.slug), method: :delete, confirm: 'sure?'
 
 %article
   :markdown
