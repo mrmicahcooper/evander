@@ -8,9 +8,18 @@
     %section#main
       %section#content
         %header
-          %h1 Evander Orange
+          %h1<>
+            E
+            %span.aqua<> v
+            a
+            %span.aqua<> n
+            %span.grey<> d
+            %span.aqua<> e
+            r Ora
+            %span.grey<> n
+            ge
           %nav
-            - %W(News Music Videos Photos Compositions Contact about).each do |name|
-              = link_to name, '#'
+            - page_slugs.each do |name|
+              = link_to name, slug_path(name)
 
         = yield
