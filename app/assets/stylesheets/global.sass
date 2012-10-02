@@ -1,4 +1,9 @@
-html 
+
+$header: 'Source Code Pro', sans-serif
+$header_link: 'Nobile', sans-serif
+$body: 'Trykker', serif
+
+html
   height: 100%
 body
   color: #e5e5e5
@@ -12,3 +17,15 @@ body
     section#content
       width: 615px
       margin: 0 auto
+      header
+        h1
+          font: normal normal 50px $header
+          text-transform: uppercase
+          letter-spacing: 5px
+        nav
+          a
+            font: normal normal 14px $header_link
+            text-transform: uppercase
+            text-decoration: none
+            color: #914343
+            padding: 3px
