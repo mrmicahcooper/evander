@@ -1,0 +1,10 @@
+= form_for new_user, url: :sign_in, class: 'sign_in', builder: Formal::Builder do |f|
+  %dl
+    = f.label :email
+    = f.text_field :email
+
+  %dl
+    = f.label :password
+    = f.password_field :password
+
+  = f.submit 'sign in'

@@ -16,6 +16,14 @@ GIT
       haml-rails
       rdiscount
 
+GIT
+  remote: https://github.com/paulelliott/authem
+  revision: 6a4813aea97f304184f3cc7f9ed9d0ecccead7d5
+  specs:
+    authem (1.0.0.rc1)
+      activesupport
+      bcrypt-ruby
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -48,6 +56,7 @@ GEM
       multi_json (~> 1.0)
     addressable (2.3.2)
     arel (3.0.2)
+    bcrypt-ruby (3.0.1)
     builder (3.0.3)
     coderay (1.0.7)
     coffee-rails (3.2.2)
@@ -153,9 +162,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  authem!
   buildybuild!
   coffee-rails (~> 3.2.1)
   decent_exposure (= 2.0.0.rc1)
+  formal
   haml-rails
   hashrocket_ui!
   heroku
@@ -163,5 +174,6 @@ DEPENDENCIES
   pg
   pry
   rails (= 3.2.8)
+  rdiscount
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)

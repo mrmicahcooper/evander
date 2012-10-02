@@ -1,8 +1,11 @@
 source 'https://rubygems.org'
 
+gem 'authem', git: 'https://github.com/paulelliott/authem'
 gem 'decent_exposure', '2.0.0.rc1'
+gem 'formal'
 gem 'haml-rails'
 gem 'rails', '3.2.8'
+gem 'rdiscount'
 gem 'pg'
 
 group :assets do
